@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Shopify</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="sign-actions">
+            <li class="nav-item">
+              <a class="nav-link active" href="signIn.html">Sign In</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="signUp.html">Sign Up</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-none" id="user-actions">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Cart Items
+                <span
+                  class="bg-danger text-white rounded p-1"
+                  id="items-counter"
+                  >0</span
+                >
+              </a>
+              <ul class="dropdown-menu" id="items-menu"></ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" id="username"></a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active bg-danger text-white rounded"
+                id="logout"
+                >Log Out</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div>
+      <ul class="nav justify-content-center menu-navs" id="menu-navs">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" id="product-nav"
+            >Products
+            <span
+              class="bg-success text-white rounded p-1"
+              id="products-counter"
+            ></span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="cart-nav"
+            >Cart
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="bg-danger text-white rounded p-1" id="cart-counter"
+              >0</span
+            >
+          </a>
+        </li>
+      </ul>
+      <div class="products-container container my-5" id="products-container">
+        <div class="row g-4" id="products-items"></div>
+      </div>
+      <div class="cart-container container my-5 d-none" id="cart-section">
+        <div class="row g-4" id="cart-items"></div>
+        <div id="products-table"></div>
+      </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

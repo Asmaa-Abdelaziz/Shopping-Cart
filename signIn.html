@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>signUp</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <div class="row align-items-center h-100">
+        <div class="col-md-6 d-none d-md-block">
+          <img src="imgs/logIn.svg" class="img-fluid" alt="signUp" />
+        </div>
+        <div class="col-12 col-md-6">
+          <form
+            action=""
+            class="mt-5 me-auto ms-auto bg-white p-5 rounded w-100 register-form"
+            novalidate
+          >
+            <h2 class="text-uppercase text-center">Register</h2>
+            <div>
+              <label for="email" class="text-capitalize mt-4"
+                >enter your email:</label
+              >
+              <input
+                type="text"
+                class="form-control mt-3"
+                id="email"
+                placeholder="email"
+              />
+            </div>
+            <div>
+              <label for="password" class="text-capitalize mt-4"
+                >enter your password:</label
+              >
+              <input
+                type="password"
+                class="form-control mt-3"
+                id="password"
+                placeholder="password"
+              />
+            </div>
+            <div>
+              <input
+                type="submit"
+                class="form-control me-auto ms-auto mt-5 bg-success text-white"
+                id="signin"
+                value="Sign in"
+              />
+              <span
+                id="error"
+                class="badge text-danger bg-danger-subtle w-100 mt-3"
+              ></span>
+            </div>
+            <p class="text-center mt-5">
+              Don't have account?
+              <a href="signUp.html" class="text-primary">Sign Up</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </main>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/signIn.js"></script>
+  </body>
+</html>

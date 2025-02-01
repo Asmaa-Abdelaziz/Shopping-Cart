@@ -1,0 +1,31 @@
+/* .card img {
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+} */
+.img-container {
+  overflow: hidden;
+}
+.card-img-top {
+  transition: all 1s;
+  height: 250px;
+  object-fit: cover;
+}
+.card:hover .card-img-top {
+  transform: scale(1.5);
+  cursor: pointer;
+}
+.nav-link {
+  cursor: pointer;
+  color: #000;
+}
+.nav-link.active {
+  color: #00f;
+}
+.quantity button {
+  border: none;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #00f;
+  margin: 5px;
+}
