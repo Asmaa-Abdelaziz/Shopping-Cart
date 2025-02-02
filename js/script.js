@@ -202,6 +202,8 @@ let logout = document.getElementById("logout");
 logout.addEventListener("click", handleLogOut);
 function handleLogOut(e) {
   e.preventDefault();
+  let userProductsKey = `${loggedInUser}Products`;
+  let addedProducts = JSON.parse(localStorage.getItem(userProductsKey)) || [];
   localStorage.setItem(
     `${loggedInUser}Products`,
     JSON.stringify(addedProducts)
